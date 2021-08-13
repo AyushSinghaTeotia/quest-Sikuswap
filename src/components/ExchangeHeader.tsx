@@ -8,17 +8,19 @@ import Lottie from 'lottie-react'
 import Gas from './Gas'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
+import swap from '../assets/images/swap.svg'
+import liquidity from '../assets/images/liquidity.svg'
 
 export default function SwapHeader({ input = undefined, output = undefined }: any): JSX.Element {
     const { i18n } = useLingui()
     const [animateSettings, setAnimateSettings] = useState(false)
     const [animateWallet, setAnimateWallet] = useState(false)
     return (
-        <div className="flex justify-between space-x-3 pt-4 px-4">
-            <div className="grid grid-cols-2 rounded-md p-3px md:bg-dark-800">
+        <div className="flex justify-between space-x-3 bg-dark-600 space-y-5">
+            <div className="grid grid-cols-2 p-3px bg-dark-800">
                 <NavLink
-                    className="flex items-center justify-center px-4 md:px-10 rounded-md text-center text-secondary hover:text-high-emphesis text-base font-medium"
-                    activeClassName="font-bold text-high-emphesis md:bg-dark-900 md:border-gradient"
+                    className="flex-col flex items-center pb-4 pt-3 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
+                    activeClassName="font-bold text-high-emphesis bg-dark-900 "
                     to={{
                         pathname: '/swap',
                         search: `?inputCurrency=${input && input.address ? input.address : 'ETH'}${
@@ -26,7 +28,9 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                         }`
                     }}
                 >
-                    {i18n._(t`Swap`)}
+                       <img src={swap} alt="swap" className="h-9 w-auto" />
+                        
+                       {i18n._(t`Swap`)}
                 </NavLink>
                 {/* <NavLink
                     className="py-2 px-4 rounded-md text-center text-secondary hover:text-high-emphesis text-xs font-medium"
@@ -36,8 +40,8 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                     Limit Order
                 </NavLink> */}
                 <NavLink
-                    className="flex items-center justify-center px-4 md:px-10 rounded-md text-center text-secondary hover:text-high-emphesis text-base font-medium"
-                    activeClassName="text-high-emphesis font-bold md:bg-dark-900 md:border-gradient"
+                    className="flex-col flex items-center pb-4 pt-3 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
+                    activeClassName="text-high-emphesis font-bold bg-dark-900 "
                     to={`/add/${input && input.address ? input.address : 'ETH'}${
                         output && output.address ? `/${output.address}` : ''
                     }`}
@@ -52,10 +56,12 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                         )
                     }}
                 >
+                    <img src={liquidity} alt="liquidity" className="h-9 w-auto" />
+                        
                     {i18n._(t`Liquidity`)}
                 </NavLink>
             </div>
-            <div className="flex items-center rounded md:border-2 md:border-dark-800 md:p-2">
+            <div className="flex items-center md:border-dark-600 md:p-4">
                 <div className="grid grid-flow-col gap-3">
                     {/* <div className="hidden md:flex space-x-3 items-center bg-dark-800 hover:bg-dark-700 rounded-sm h-full w-full px-2 py-1.5 cursor-pointer">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +74,7 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                             <Gas />
                         </div>
                     </div> */}
-                    <div className="bg-dark-800 hover:bg-dark-700 rounded-sm h-full w-full p-1 md:px-2">
+                    <div className="bg-dark-600 rounded-sm h-full w-full md:px-2 pb-5 pr-3 pl-3 pt-2">
                         <Settings />
                     </div>
                     {/* <button

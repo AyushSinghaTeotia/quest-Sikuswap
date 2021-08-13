@@ -172,14 +172,14 @@ export default function Pool() {
                         <div className="text-xl text-high-emphesis font-medium">
                             {i18n._(t`Your Liquidity Positions`)}
                         </div>
-                        <div className="text-sm font-bold">
+                        {/* <div className="text-sm font-bold">
                             <Trans>
                                 Don&apos;t see a pool you joined?{' '}
                                 <Link id="import-pool-link" to="/find" className="text-blue">
                                     Import it.
                                 </Link>
                             </Trans>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="grid grid-flow-row gap-3">
                         {!account ? (
@@ -226,21 +226,21 @@ export default function Pool() {
                             </EmptyProposals>
                         )}
 
-                        {chainId && [ChainId.MAINNET, ChainId.BSC, ChainId.MATIC, ChainId.RINKEBY].includes(chainId) && (
+                        {/* {chainId && [ChainId.MAINNET, ChainId.BSC, ChainId.MATIC, ChainId.RINKEBY].includes(chainId) && (
                             <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
                                 {i18n._(t`Have Liquidity on ${(chainId && migrateFrom[chainId]) ?? ''}?`)}{' '}
                                 <StyledInternalLink id="migrate-pool-link" to={'/migrate'}>
                                     {i18n._(t`Migrate Now`)}
                                 </StyledInternalLink>
                             </Text>
-                        )}
+                        )} */}
                         <div className="grid grid-cols-2 gap-4">
-                            <Button id="join-pool-button" color="gradient" onClick={() => history.push('/add/ETH')}>
+                            <Button id="join-pool-button" color='brown' onClick={() => history.push('/add/ETH')}>
                                 {i18n._(t`Add Liquidity`)}
                             </Button>
                             <Button
                                 id="create-pool-button"
-                                color="default"
+                                color="brown"
                                 className="bg-dark-800"
                                 onClick={() => history.push('/create/ETH')}
                             >

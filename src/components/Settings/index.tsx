@@ -24,11 +24,11 @@ import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 
 const StyledMenuIcon = styled(Settings)`
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 
     > * {
-        stroke: ${({ theme }) => theme.text2};
+        stroke: ${({ theme }) => theme.primary5};
     }
 
     :hover {

@@ -114,7 +114,7 @@ export default function LiquidityPositions() {
                         {i18n._(t`No liquidity positions found`)}
                     </div>
                 )}
-                <AutoColumn justify={'center'} gap="xs" style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
+                {/* <AutoColumn justify={'center'} gap="xs" style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
                     {chainId && [ChainId.MAINNET, ChainId.BSC, ChainId.MATIC].includes(chainId) && (
                         <Text textAlign="center" fontSize={16} style={{ padding: '.5rem 0 .5rem 0' }}>
                             Have Liquidity on {(chainId && migrateFrom[chainId]) ?? ''}?{' '}
@@ -123,7 +123,7 @@ export default function LiquidityPositions() {
                             </StyledInternalLink>
                         </Text>
                     )}
-                </AutoColumn>
+                </AutoColumn> */}
                 <div className="flex gap-4 mt-5 mb-1">
                     <Link to="/add/ETH" className="w-full">
                         <Button size="large" color="gradient">

@@ -38,11 +38,23 @@ input:focus {
   background: #FA52A0;
   cursor: pointer;
 }
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
-  background: #FA52A0;
-  cursor: pointer;
+.bg-dark-900 {
+  background-color: #270c33 !important;
 }
+.bg-dark-800 {
+  background-color: #1c0826 !important;
+}
+.bg-dark-600 {
+  background-color: #270c33 !important;
+  /* color: #5d5d5d !important; */
+  color: #dc3c3b !important;
+}
+.bg-dark-650 {
+  background-color: #1c0826 !important;
+}
+.bg-dark-750 {
+  background: #710e36 !important;
+  color: white;
+}
+
+
