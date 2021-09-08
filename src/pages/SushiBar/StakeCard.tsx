@@ -148,7 +148,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
         :
         (chainId === 4)
         ? new TokenAmount(
-            new Token(4, '0xAD439749760549212b774A7B19a8F65F2672BF76', 18, 'SamK', ''),
+            new Token(4, '0x526E610900E17b53d0CC2115A600b9a55838a715', 18, 'SamK', ''),
             parsedInput.value.toString()
         )
         :

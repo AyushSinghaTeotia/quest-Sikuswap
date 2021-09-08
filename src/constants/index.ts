@@ -97,7 +97,7 @@ export const SAMK: ChainTokenMap = {
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
-        '0xAD439749760549212b774A7B19a8F65F2672BF76',
+        '0x526E610900E17b53d0CC2115A600b9a55838a715',
         18,
         'SAMK',
         'SamKoin'
