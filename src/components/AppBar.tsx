@@ -74,7 +74,7 @@ function AppBar(): JSX.Element {
                                             )} */}
                                             {chainId &&
                                                 [ChainId.MAINNET, ChainId.MATIC, ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
-                                                <NavLink id={`sushibar-nav-link`} to={'/sushibar'}>
+                                                <NavLink id={`sushibar-nav-link`} to={'/Samkbar'}>
                                                     {i18n._(t`SamKBar`)}
                                                 </NavLink>
                                             )}
@@ -457,7 +457,7 @@ function AppBar(): JSX.Element {
                                     )}
                                 {chainId &&
                                     [ChainId.MAINNET, ChainId.MATIC, ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
-                                    <NavLink id={`stake-nav-link`} to={'/sushibar'}>
+                                    <NavLink id={`stake-nav-link`} to={'/Samkbar'}>
                                         {i18n._(t`SamKBar`)}
                                     </NavLink>
                                 )}

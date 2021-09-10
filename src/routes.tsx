@@ -79,9 +79,9 @@ function Routes(): JSX.Element {
                 <Route exact strict path="/migrate" component={Migrate} />
             )}
 
-            {/* SushiBar Staking */}
+            {/* Samkbar Staking */}
             {(chainId === ChainId.MAINNET || chainId === ChainId.MATIC || chainId === ChainId.RINKEBY || chainId === ChainId.BSC) && ( 
-            <Route exact strict path="/sushibar" component={SushiBar} />
+            <Route exact strict path="/Samkbar" component={SushiBar} />
             )}
             {(chainId === ChainId.MAINNET || chainId === ChainId.MATIC || chainId === ChainId.RINKEBY || chainId === ChainId.BSC) && (
                 <Route exact strict path="/sushibar/transactions" component={SushiBarTransactions} />
