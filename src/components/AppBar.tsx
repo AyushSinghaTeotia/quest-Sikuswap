@@ -264,15 +264,15 @@ function AppBar(): JSX.Element {
                                                             }}
                                                         >
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/images/tokens/xsushi-square.jpg`}
+                                                                src={`${process.env.PUBLIC_URL}/images/tokens/xsamk-square.png`}
                                                                 alt="Switch Network"
                                                                 style={{
-                                                                    minWidth: 36,
-                                                                    minHeight: 36,
-                                                                    maxWidth: 36,
-                                                                    maxHeight: 36
+                                                                    minWidth: 66,
+                                                                    minHeight: 46,
+                                                                    maxWidth: 66,
+                                                                    maxHeight: 46
                                                                 }}
-                                                                className="rounded-md object-contain"
+                                                                className="object-contain"
                                                             />
                                                         </div>
                                                     </QuestionHelper>
@@ -342,15 +342,15 @@ function AppBar(): JSX.Element {
                                                             }}
                                                         >
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/images/tokens/sushi-square.jpg`}
+                                                                src={`${process.env.PUBLIC_URL}/images/tokens/samk-square.png`}
                                                                 alt="Switch Network"
                                                                 style={{
-                                                                    minWidth: 36,
-                                                                    minHeight: 36,
-                                                                    maxWidth: 36,
-                                                                    maxHeight: 36
+                                                                    minWidth: 66,
+                                                                    minHeight: 46,
+                                                                    maxWidth: 66,
+                                                                    maxHeight: 46
                                                                 }}
-                                                                className="rounded-md object-contain"
+                                                                className="object-contain"
                                                             />
                                                         </div>
                                                     </QuestionHelper>

@@ -31,7 +31,7 @@ export default function APRCard() {
                 </div>
                 <div className="flex">
                     <a
-                        href={`https://analytics.sushi.com/bar`}
+                        // href={`https://analytics.sushi.com/bar`}
                         target="_blank"
                         rel="noreferrer noopener"
                         className={`
