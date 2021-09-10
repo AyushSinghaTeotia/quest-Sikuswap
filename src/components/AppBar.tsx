@@ -226,7 +226,7 @@ function AppBar(): JSX.Element {
                                                                         break
                                                                     case ChainId.RINKEBY:
                                                                         address =
-                                                                            '0x9455FA7047045454f4aF0c650B88e2F72232A13E'
+                                                                            '0xc45706a1B1C935B50dAC129025e4E8b847912136'
                                                                         break
                                                                 }
                                                                 const params: any = {
