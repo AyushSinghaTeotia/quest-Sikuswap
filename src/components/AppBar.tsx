@@ -38,6 +38,8 @@ function AppBar(): JSX.Element {
     }, [pathname])
 
     return (
+        
+
         <header className="flex flex-row flex-nowrap justify-between w-screen">
             <Disclosure as="nav" className={navClassList}>
                 {({ open }) => (
@@ -50,9 +52,13 @@ function AppBar(): JSX.Element {
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
                                         <div className="flex space-x-2">
+                                     
                                             <NavLink id={`swap-nav-link`} to={'/swap'}>
                                                 {i18n._(t`Swap`)}
                                             </NavLink>
+                                            
+                                             {chainId &&
+                                                [ChainId.RINKEBY].includes(chainId) && (
                                             <NavLink
                                                 id={`pool-nav-link`}
                                                 to={'/pool'}
@@ -66,6 +72,7 @@ function AppBar(): JSX.Element {
                                             >
                                                 {i18n._(t`Pool`)}
                                             </NavLink>
+                                            )}
                                             {/* {chainId && [ChainId.MAINNET, ChainId.MATIC].includes(chainId) && (
                                                 <NavLink id={`yield-n
                                                 av-link`} to={'/yield'}>
@@ -73,7 +80,7 @@ function AppBar(): JSX.Element {
                                                 </NavLink>
                                             )} */}
                                             {chainId &&
-                                                [ChainId.MAINNET, ChainId.MATIC, ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
+                                                [ChainId.RINKEBY].includes(chainId) && (
                                                 <NavLink id={`sushibar-nav-link`} to={'/Samkbar'}>
                                                     {i18n._(t`SamKBar`)}
                                                 </NavLink>
@@ -185,7 +192,7 @@ function AppBar(): JSX.Element {
                                                 </>
                                             )}
                                         {chainId &&
-                                            [ChainId.MAINNET, ChainId.MATIC, ChainId.RINKEBY, ChainId.BSC].includes(chainId) &&
+                                            [ ChainId.RINKEBY].includes(chainId) &&
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
@@ -212,18 +219,18 @@ function AppBar(): JSX.Element {
                                                             onClick={() => {
                                                                 let address: string | undefined
                                                                 switch (chainId) {
-                                                                    case ChainId.MAINNET:
-                                                                        address =
-                                                                            '0xbea6aff7067d1db51145039c6484a9b670c705ad'    //address need to change
-                                                                        break
-                                                                    case ChainId.BSC:
-                                                                        address =
-                                                                            '0xAF53b5f1AE51ae5Fe554912A7a2649Ebb90074E7'    
-                                                                        break
-                                                                    case ChainId.MATIC:
-                                                                        address =
-                                                                            '0xbea6aff7067d1db51145039c6484a9b670c705ad'     //address need to change
-                                                                        break
+                                                                    // case ChainId.MAINNET:
+                                                                    //     address =
+                                                                    //         '0xbea6aff7067d1db51145039c6484a9b670c705ad'    //address need to change
+                                                                    //     break
+                                                                    // case ChainId.BSC:
+                                                                    //     address =
+                                                                    //         '0xAF53b5f1AE51ae5Fe554912A7a2649Ebb90074E7'    
+                                                                    //     break
+                                                                    // case ChainId.MATIC:
+                                                                    //     address =
+                                                                    //         '0xbea6aff7067d1db51145039c6484a9b670c705ad'     //address need to change
+                                                                    //     break
                                                                     case ChainId.RINKEBY:
                                                                         address =
                                                                             '0xc45706a1B1C935B50dAC129025e4E8b847912136'
@@ -280,7 +287,7 @@ function AppBar(): JSX.Element {
                                             )}
 
                                         {chainId &&
-                                            [ChainId.MAINNET, ChainId.BSC, ChainId.MATIC, ChainId.RINKEBY].includes(chainId) &&
+                                            [ ChainId.RINKEBY].includes(chainId) &&
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
@@ -290,18 +297,18 @@ function AppBar(): JSX.Element {
                                                             onClick={() => {
                                                                 let address: string | undefined
                                                                 switch (chainId) {
-                                                                    case ChainId.MAINNET:
-                                                                        address =
-                                                                            '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54'  //address need to change
-                                                                        break
-                                                                    case ChainId.BSC:
-                                                                        address =
-                                                                            '0xC456D84D202FcB97E29Fc2dce20aC613434C8065'   //address need to change
-                                                                        break
-                                                                    case ChainId.MATIC:
-                                                                        address =
-                                                                            '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54'
-                                                                        break
+                                                                    // case ChainId.MAINNET:
+                                                                    //     address =
+                                                                    //         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54'  //address need to change
+                                                                    //     break
+                                                                    // case ChainId.BSC:
+                                                                    //     address =
+                                                                    //         '0xC456D84D202FcB97E29Fc2dce20aC613434C8065'   //address need to change
+                                                                    //     break
+                                                                    // case ChainId.MATIC:
+                                                                    //     address =
+                                                                    //         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54'
+                                                                    //     break
                                                                     case ChainId.RINKEBY:
                                                                         address =
                                                                             '0x526E610900E17b53d0CC2115A600b9a55838a715'
@@ -420,10 +427,13 @@ function AppBar(): JSX.Element {
                             >
                                 Dashboard
                             </a> */}
-
+                            
+                            {chainId && [ChainId.RINKEBY].includes(chainId) && (
                                 <NavLink id={`swap-nav-link`} to={'/swap'}>
                                     {i18n._(t`Swap`)}
                                 </NavLink>
+                            )}
+                            {chainId && [ChainId.RINKEBY].includes(chainId) && (
                                 <NavLink
                                     id={`pool-nav-link`}
                                     to={'/pool'}
@@ -437,7 +447,7 @@ function AppBar(): JSX.Element {
                                 >
                                     {i18n._(t`Pool`)}
                                 </NavLink>
-
+                            )}
                                 {chainId && [ChainId.MAINNET, ChainId.MATIC].includes(chainId) && (
                                     <NavLink id={`yield-nav-link`} to={'/yield'}>
                                         {i18n._(t`Yield`)}
@@ -492,7 +502,9 @@ function AppBar(): JSX.Element {
                 )}
             </Disclosure>
         </header>
-    )
+        
+        
+        )
 }
 
 export default AppBar

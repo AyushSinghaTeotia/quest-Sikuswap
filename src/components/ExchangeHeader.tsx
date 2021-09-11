@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { ChainId, Currency } from 'quest-samkoin-sdk'
 import Settings from './Settings'
 import { NavLink } from './Link'
 import animationData from '../assets/animation/settings-slider.json'
@@ -10,11 +11,14 @@ import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import swap from '../assets/images/swap.svg'
 import liquidity from '../assets/images/liquidity.svg'
+import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
+
 
 export default function SwapHeader({ input = undefined, output = undefined }: any): JSX.Element {
     const { i18n } = useLingui()
     const [animateSettings, setAnimateSettings] = useState(false)
     const [animateWallet, setAnimateWallet] = useState(false)
+    const { account, chainId, library } = useActiveWeb3React()
     return (
         <div className="flex justify-between space-x-3 bg-dark-600 space-y-5">
             <div className="grid grid-cols-2 p-3px bg-dark-800">
@@ -39,6 +43,8 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                 >
                     Limit Order
                 </NavLink> */}
+                 {chainId &&
+               [ChainId.RINKEBY].includes(chainId) && (
                 <NavLink
                     className="flex-col flex items-center pb-4 pt-3 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
                     activeClassName="text-high-emphesis font-bold bg-dark-900 "
@@ -60,6 +66,7 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                         
                     {i18n._(t`Liquidity`)}
                 </NavLink>
+               )}
             </div>
             <div className="flex items-center md:border-dark-600 md:p-4">
                 <div className="grid grid-flow-col gap-3">
