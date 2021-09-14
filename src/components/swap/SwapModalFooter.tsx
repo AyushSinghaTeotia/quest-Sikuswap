@@ -125,7 +125,7 @@ export default function SwapModalFooter({
                             : '-'}
                     </TYPE.black>
                 </RowBetween>
-                <RowBetween>
+                {/* <RowBetween>
                     <RowFixed>
                         <TYPE.black color={theme.text2} fontSize={14} fontWeight={400}>
                             {i18n._(t`You Save`)}
@@ -146,7 +146,7 @@ export default function SwapModalFooter({
                         />
                     </RowFixed>
                     <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
-                </RowBetween>
+                </RowBetween> */}
                 
             </AutoColumn>
 

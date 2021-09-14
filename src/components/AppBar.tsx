@@ -17,6 +17,7 @@ import QuestionHelper from './QuestionHelper'
 import { t } from '@lingui/macro'
 import LanguageSwitch from './LanguageSwitch'
 import { useLingui } from '@lingui/react'
+import { ButtonError } from '../components/ButtonLegacy'
 
 function AppBar(): JSX.Element {
     const { i18n } = useLingui()
@@ -130,9 +131,9 @@ function AppBar(): JSX.Element {
                                     </div>
                                 </div>
 
-                                <div className="flex flex-row items-center justify-center w-full lg:w-auto p-4 fixed left-0 bottom-0 bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">
-                                    <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">
-                                        {chainId &&
+                                <div className="flex flex-row items-center justify-center w-full lg:w-auto p-4 fixed left-0 bottom-0 bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">                                
+                                    <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">                          
+                                        {/* {chainId &&
                                             [ChainId.MAINNET].includes(chainId) &&
                                             library &&
                                             library.provider.isMetaMask && (
@@ -190,7 +191,8 @@ function AppBar(): JSX.Element {
                                                         </div>
                                                     </QuestionHelper>
                                                 </>
-                                            )}
+                                            )} */}
+                                            
                                         {chainId &&
                                             [ ChainId.RINKEBY].includes(chainId) &&
                                             library &&
@@ -363,7 +365,7 @@ function AppBar(): JSX.Element {
                                                     </QuestionHelper>
                                                 </>
                                             )}
-                                        {chainId && chainId === ChainId.MATIC && (
+                                        {/* {chainId && chainId === ChainId.MATIC && (
                                             <div className="hidden sm:inline-block">
                                                 <a
                                                     className="flex items-center rounded bg-dark-900 hover:bg-dark-800 p-0.5 whitespace-nowrap text-sm font-bold cursor-pointer select-none pointer-events-auto"
@@ -376,30 +378,54 @@ function AppBar(): JSX.Element {
                                                     </div>
                                                 </a>
                                             </div>
-                                        )}
+                                        )}  */}
+
                                         {library && library.provider.isMetaMask && (
                                             <div className="hidden sm:inline-block">
+                                                 {chainId &&
+                                            [ ChainId.RINKEBY, ChainId.BSC].includes(chainId) &&
                                                 <Web3Network />
+                                                }
                                             </div>
                                         )}
+                                        {library && library.provider.isMetaMask && (
+                                           
+                                        <div className="w-auto flex items-center rounded bg-dark-900 hover:bg-dark-800 p-0.5 whitespace-nowrap text-sm font-bold cursor-pointer select-none pointer-events-auto">
+                                         {chainId && chainId !== ChainId.RINKEBY && chainId !== ChainId.BSC &&  ( 
+                                       
+                                         <ButtonError onClick={() => {window.alert(
+                                            i18n._(t`Please Choose Correct Network`)
+                                           )}
+                                            }>
+                                            {i18n._(t`Wrong Network`)}
+                                            </ButtonError>
+                                             )}
+                                             </div>
+                                        )}
+                                    
 
                                         <div className="w-auto flex items-center rounded bg-dark-900 hover:bg-dark-800 p-0.5 whitespace-nowrap text-sm font-bold cursor-pointer select-none pointer-events-auto">
                                             {account && chainId && userEthBalance && (
                                                 <>
+                                                  {chainId && 
+                                                     [ ChainId.RINKEBY].includes(chainId) &&
                                                     <div className="py-2 px-3 text-primary text-bold">
+                                                  
                                                         {userEthBalance?.toSignificant(4)}{' '}
                                                         {Currency.getNativeCurrencySymbol(chainId)}
+                                                    
                                                     </div>
+                                                  }
                                                 </>
                                             )}
                                             <Web3Status />
                                         </div>
                                         <LanguageSwitch />
 
-                                        {chainId &&
-                                            [ChainId.GÖRLI, ChainId.KOVAN, ChainId.RINKEBY, ChainId.ROPSTEN, ChainId.MATIC].includes(
+                                        {/* {chainId &&
+                                            [ChainId.RINKEBY].includes(
                                                 chainId
-                                            ) && <Web3Faucet />}
+                                            ) && <Web3Faucet />} */}
 
                                         <MoreMenu />
                                     </div>
@@ -448,7 +474,7 @@ function AppBar(): JSX.Element {
                                     {i18n._(t`Pool`)}
                                 </NavLink>
                             )}
-                                {chainId && [ChainId.MAINNET, ChainId.MATIC].includes(chainId) && (
+                                {/* {chainId && [ChainId.MAINNET, ChainId.MATIC].includes(chainId) && (
                                     <NavLink id={`yield-nav-link`} to={'/yield'}>
                                         {i18n._(t`Yield`)}
                                     </NavLink>
@@ -464,14 +490,14 @@ function AppBar(): JSX.Element {
                                         <NavLink id={`bento-nav-link`} to={'/bento'}>
                                             {i18n._(t`BentoBox`)}
                                         </NavLink>
-                                    )}
+                                    )} */}
                                 {chainId &&
-                                    [ChainId.MAINNET, ChainId.MATIC, ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
+                                    [ ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
                                     <NavLink id={`stake-nav-link`} to={'/Samkbar'}>
                                         {i18n._(t`SamKBar`)}
                                     </NavLink>
                                 )}
-                                {chainId === ChainId.MAINNET && (
+                                {/* {chainId === ChainId.MAINNET && (
                                     <ExternalLink id={`stake-nav-link`} href={'https://miso.sushi.com'}>
                                         {i18n._(t`Miso`)}
                                     </ExternalLink>
@@ -495,7 +521,7 @@ function AppBar(): JSX.Element {
                                         >
                                             {i18n._(t`Analytics`)}
                                         </ExternalLink>
-                                    )}
+                                    )} */}
                             </div>
                         </Disclosure.Panel>
                     </>

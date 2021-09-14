@@ -112,6 +112,28 @@ const PARAMS: {
         rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
         blockExplorerUrls: ['https://explorer.avax.network']
     },
+    [ChainId.BSC_TESTNET]: {
+        chainId: '0x97',
+        chainName: 'BSC testnet',
+        nativeCurrency: {
+            name: 'Binance Coin',
+            symbol: 'BNB',
+            decimals: 18
+        },
+        rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545/'],
+        blockExplorerUrls: ['https://testnet.bscscan.com/']
+    },
+    [ChainId.RINKEBY]: {
+        chainId: '0x4',
+        chainName: 'Rinkeby',
+        nativeCurrency: {
+            name: 'Ethereum',
+            symbol: 'ETH',
+            decimals: 18
+        },
+        rpcUrls: ['https://rinkeby.infura.io/v3/'],
+        blockExplorerUrls: ['https://rinkeby.etherscan.io']
+    },
     [ChainId.OKEX]: {
         chainId: '0x42',
         chainName: 'OKEx',
@@ -142,15 +164,17 @@ export default function NetworkModal(): JSX.Element | null {
 
             <div className="flex flex-col space-y-5 overflow-y-auto">
                 {[
-                    ChainId.MAINNET,
-                    ChainId.FANTOM,
+                    // ChainId.MAINNET,
+                    // ChainId.FANTOM,
                     ChainId.BSC,
-                    ChainId.MATIC,
-                    ChainId.HECO,
-                    ChainId.XDAI,
-                    ChainId.HARMONY,
-                    ChainId.AVALANCHE,
-                    ChainId.OKEX
+                    ChainId.BSC_TESTNET,
+                    ChainId.RINKEBY
+                    // ChainId.MATIC,
+                    // ChainId.HECO,
+                    // ChainId.XDAI,
+                    // ChainId.HARMONY,
+                    // ChainId.AVALANCHE,
+                    // ChainId.OKEX
                 ].map((key: ChainId, i: number) => {
                     if (chainId === key) {
                         return (

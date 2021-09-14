@@ -76,7 +76,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
                             : '-'}
                     </div>
                 </RowBetween>
-                <RowBetween>
+                {/* <RowBetween>
                     <RowFixed>
                         <div className="text-secondary text-sm">{i18n._(t`You Save`)}</div>
                         <QuestionHelper
@@ -107,7 +107,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
                             // ? `${parseFloat(trade.inputAmount.toSignificant(6))/100} $`
                             : '-'}
                     </div>
-                </RowBetween>
+                </RowBetween> */}
             
             </AutoColumn>
         </>
