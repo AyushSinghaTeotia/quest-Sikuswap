@@ -1,4 +1,4 @@
-import { Currency, Token, WETH } from 'quest-samkoin-sdk'
+import { Currency, Token, WETH } from 'quest-sikuswap-sdk'
 import { ZERO, e10, easyAmount, toAmount } from 'kashi/functions'
 import { useBentoBoxContract, useBoringHelperContract, useContract } from '../../hooks/useContract'
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'

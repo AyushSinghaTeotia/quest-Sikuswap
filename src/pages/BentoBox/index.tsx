@@ -20,7 +20,7 @@ function BentoBox(): JSX.Element {
         <>
             {' '}
             <Helmet>
-                <title>BentoBox | SamKSwap</title>
+                <title>BentoBox | SikuSwap</title>
             </Helmet>
             <div>
                 <div

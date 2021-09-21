@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ChainId, Currency } from 'quest-samkoin-sdk'
+import { ChainId, Currency } from 'quest-sikuswap-sdk'
 import Settings from './Settings'
 import { NavLink } from './Link'
 import animationData from '../assets/animation/settings-slider.json'

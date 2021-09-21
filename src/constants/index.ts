@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from 'quest-samkoin-sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from 'quest-sikuswap-sdk'
 import { fortmatic, injected, lattice, portis, torus, walletconnect, walletlink } from '../connectors'
 
 import { AbstractConnector } from '@web3-react/abstract-connector'
@@ -80,34 +80,34 @@ export const SUSHI: ChainTokenMap = {
     
 // }
 
-export const SAMK: ChainTokenMap = {
+export const SIKU: ChainTokenMap = {
     [ChainId.MAINNET]: new Token(
         ChainId.MAINNET,
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //ADDRESS NEED TO UPDATE
         18,
-        'SAMK',
-        'SamKoin'
+        'SIKU',
+        'siku'
     ),
     [ChainId.MATIC]: new Token(
         ChainId.MATIC,
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //address need to update
         18,
-        'SAMK',
-        'SamKoin'
+        'SIKU',
+        'siku'
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
         '0x526E610900E17b53d0CC2115A600b9a55838a715',
         18,
-        'SAMK',
-        'SamKoin'
+        'SIKU',
+        'siku'
     ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xC456D84D202FcB97E29Fc2dce20aC613434C8065',  
         10,
-        'SAMK',
-        'SamKoin'
+        'SIKU',
+        'siku'
     )
     
 }
@@ -143,34 +143,34 @@ export const SAMK: ChainTokenMap = {
 //     )
 // }
 
-export const xSAMK: ChainTokenMap = {
+export const xSIKU: ChainTokenMap = {
     [ChainId.MAINNET]: new Token(
         ChainId.MAINNET,
         '0xbea6aff7067d1db51145039c6484a9b670c705ad',  //address need to change
          18,
-        'xSAMK',
-        'SamKBar'
+        'xSIKU',
+        'SikuBar'
     ),
     [ChainId.MATIC]: new Token(
         ChainId.MATIC,
         '0xbea6aff7067d1db51145039c6484a9b670c705ad',     //address need to change
          18,
-        'xSAMK',
-        'SamKBar'
+        'xSIKU',
+        'SikuBar'
     ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xAF53b5f1AE51ae5Fe554912A7a2649Ebb90074E7',     
          18,
-        'xSAMK',
-        'SamKBar'
+        'xSIKU',
+        'SikuBar'
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
         '0xc45706a1B1C935B50dAC129025e4E8b847912136',
         18,
-        'xSAMK',
-        'SamKBar'
+        'xSIKU',
+        'SikuBar'
     )
 }
 
@@ -259,7 +259,7 @@ export const MATIC: { [key: string]: Token } = {
     USDT: new Token(ChainId.MATIC, '0xc2132D05D31c914a87C6611C10748AEb04B58e8F', 6, 'USDT', 'Tether USD'),
     TEL: new Token(ChainId.MATIC, '0xdF7837DE1F2Fa4631D716CF2502f8b230F1dcc32', 2, 'TEL', 'Telcoin'),
     SUSHI: new Token(ChainId.MATIC, '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a', 18, 'SUSHI', 'SushiToken'),
-    SAMK: new Token(ChainId.MATIC, '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',18, 'SAMK', 'SamKoin'),
+    SIKU: new Token(ChainId.MATIC, '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',18, 'SIKU', 'siku'),
     // RADIO: new Token(ChainId.MATIC, '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',18, 'RADIO', 'RadioToken'),
     AAVE: new Token(ChainId.MATIC, '0xD6DF932A45C0f255f85145f286eA0b292B21C90B', 18, 'AAVE', 'Aave'),
     FRAX: new Token(ChainId.MATIC, '0x104592a158490a9228070E0A8e5343B499e125D0', 18, 'FRAX', 'Frax'),

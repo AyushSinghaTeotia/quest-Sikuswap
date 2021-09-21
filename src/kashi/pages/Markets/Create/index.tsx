@@ -129,7 +129,7 @@ const CreatePair = () => {
             }
         >
             <Helmet>
-                <title>Create Market | SamKSwap</title>
+                <title>Create Market | SikuSwap</title>
             </Helmet>
             <Card
                 className="h-full bg-dark-900"

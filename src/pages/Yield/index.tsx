@@ -6,7 +6,7 @@ import { formattedNum, formattedPercent } from '../../utils'
 import { useFuse, useSortableData } from 'hooks'
 import { useMasterChefContract, useMiniChefV2Contract } from '../../hooks/useContract'
 
-import { ChainId } from 'quest-samkoin-sdk'
+import { ChainId } from 'quest-sikuswap-sdk'
 import { SimpleDots as Dots } from 'kashi/components'
 import { Helmet } from 'react-helmet'
 import Menu from './Menu'
@@ -125,7 +125,7 @@ export default function Yield(): JSX.Element {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Yield`)} | SamKSwap</title>
+                <title>{i18n._(t`Yield`)} | SikuSwap</title>
                 <meta name="description" content="Farm SUSHI by staking LP (Liquidity Provider) tokens" />
             </Helmet>
             <div className="container grid grid-cols-4 gap-4 mx-auto">

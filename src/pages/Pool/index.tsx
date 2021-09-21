@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair } from 'quest-samkoin-sdk'
+import { ChainId, JSBI, Pair } from 'quest-sikuswap-sdk'
 import { transparentize } from 'polished'
 import React, { useContext, useMemo } from 'react'
 import { Link, useHistory } from 'react-router-dom'
@@ -155,7 +155,7 @@ export default function Pool() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Pool`)} | SamKSwap</title>
+                <title>{i18n._(t`Pool`)} | SikuSwap</title>
             </Helmet>
             <div className="bg-dark-900 w-full max-w-2xl rounded shadow-liquidity-purple-glow">
                 <ExchangeHeader />

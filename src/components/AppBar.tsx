@@ -1,4 +1,4 @@
-import { ChainId, Currency } from 'quest-samkoin-sdk'
+import { ChainId, Currency } from 'quest-sikuswap-sdk'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Logo from '../assets/images/logo.svg'
@@ -82,8 +82,8 @@ function AppBar(): JSX.Element {
                                             )} */}
                                             {chainId &&
                                                 [ChainId.RINKEBY].includes(chainId) && (
-                                                <NavLink id={`sushibar-nav-link`} to={'/Samkbar'}>
-                                                    {i18n._(t`SamKBar`)}
+                                                <NavLink id={`sushibar-nav-link`} to={'/Sikubar'}>
+                                                    {i18n._(t`SikuBar`)}
                                                 </NavLink>
                                             )}
                                             {/* {chainId &&
@@ -199,7 +199,7 @@ function AppBar(): JSX.Element {
                                             library.provider.isMetaMask && (
                                                 <>
                                                     <QuestionHelper
-                                                        text={i18n._(t`Add xSamK to your Metamask wallet`)}
+                                                        text={i18n._(t`Add xSiku to your Metamask wallet`)}
                                                     >
                                                         {/* <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
@@ -209,7 +209,7 @@ function AppBar(): JSX.Element {
                                                                     options: {
                                                                         address:
                                                                             '0xbFa85aF088c28ab112fE40903c97bd8535c5e93c',
-                                                                        symbol: 'xSamK',
+                                                                        symbol: 'xSiku',
                                                                         decimals: 18,
                                                                         image:
                                                                             'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272/logo.png'
@@ -242,10 +242,10 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'xSAMK',
+                                                                        symbol: 'xSiku',
                                                                         decimals: 18,
                                                                         image:
-                                                                            'https://samkoin.com/public/images/other/sam1.png'
+                                                                            'https://siku.com/public/images/other/sam1.png'
                                                                     }
                                                                 }    
 
@@ -262,7 +262,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added xSamK to MetaMask'
+                                                                                    'Successfully added xSiku to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')
@@ -273,7 +273,7 @@ function AppBar(): JSX.Element {
                                                             }}
                                                         >
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/images/tokens/xsamk-square.png`}
+                                                                src={`${process.env.PUBLIC_URL}/images/tokens/xsiku-square.png`}
                                                                 alt="Switch Network"
                                                                 style={{
                                                                     minWidth: 66,
@@ -293,7 +293,7 @@ function AppBar(): JSX.Element {
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
-                                                    <QuestionHelper text={i18n._(t`Add SamK to your Metamask wallet`)}>
+                                                    <QuestionHelper text={i18n._(t`Add Siku to your Metamask wallet`)}>
                                                         <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
                                                             onClick={() => {
@@ -320,10 +320,10 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'SamK',
+                                                                        symbol: 'Siku',
                                                                         decimals: 18,
                                                                         image:
-                                                                            'https://samkoin.com/public/images/other/sam1.png'
+                                                                            'https://siku.com/public/images/other/sam1.png'
                                                                     }
                                                                 }
 
@@ -340,7 +340,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added SamK to MetaMask'
+                                                                                    'Successfully added Siku to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')
@@ -351,7 +351,7 @@ function AppBar(): JSX.Element {
                                                             }}
                                                         >
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/images/tokens/samk-square.png`}
+                                                                src={`${process.env.PUBLIC_URL}/images/tokens/siku-square.png`}
                                                                 alt="Switch Network"
                                                                 style={{
                                                                     minWidth: 66,
@@ -493,8 +493,8 @@ function AppBar(): JSX.Element {
                                     )} */}
                                 {chainId &&
                                     [ ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
-                                    <NavLink id={`stake-nav-link`} to={'/Samkbar'}>
-                                        {i18n._(t`SamKBar`)}
+                                    <NavLink id={`stake-nav-link`} to={'/Sikubar'}>
+                                        {i18n._(t`SikuBar`)}
                                     </NavLink>
                                 )}
                                 {/* {chainId === ChainId.MAINNET && (

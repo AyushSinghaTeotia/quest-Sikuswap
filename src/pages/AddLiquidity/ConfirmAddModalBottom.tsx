@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from 'quest-samkoin-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent } from 'quest-sikuswap-sdk'
 import React from 'react'
 import { Text } from 'rebass'
 import { ButtonPrimary } from '../../components/ButtonLegacy'

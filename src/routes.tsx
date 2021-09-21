@@ -1,4 +1,4 @@
-import { ChainId } from 'quest-samkoin-sdk'
+import { ChainId } from 'quest-sikuswap-sdk'
 import React from 'react'
 import { Redirect, Route, RouteComponentProps, useLocation, Switch } from 'react-router-dom'
 import { useActiveWeb3React } from 'hooks/useActiveWeb3React'
@@ -79,9 +79,9 @@ function Routes(): JSX.Element {
                 <Route exact strict path="/migrate" component={Migrate} />
             )}
 
-            {/* Samkbar Staking */}
+            {/* Sikubar Staking */}
             {(chainId === ChainId.MAINNET || chainId === ChainId.MATIC || chainId === ChainId.RINKEBY || chainId === ChainId.BSC) && ( 
-            <Route exact strict path="/Samkbar" component={SushiBar} />
+            <Route exact strict path="/Sikubar" component={SushiBar} />
             )}
             {(chainId === ChainId.MAINNET || chainId === ChainId.MATIC || chainId === ChainId.RINKEBY || chainId === ChainId.BSC) && (
                 <Route exact strict path="/sushibar/transactions" component={SushiBarTransactions} />

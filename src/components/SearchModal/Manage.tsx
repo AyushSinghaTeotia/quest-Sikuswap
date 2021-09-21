@@ -1,4 +1,4 @@
-import { Token } from 'quest-samkoin-sdk'
+import { Token } from 'quest-sikuswap-sdk'
 import { TokenList } from '@uniswap/token-lists'
 import { RowBetween } from 'components/Row'
 import React, { useState } from 'react'

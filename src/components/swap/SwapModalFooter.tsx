@@ -1,4 +1,4 @@
-import { Trade, TradeType } from 'quest-samkoin-sdk'
+import { Trade, TradeType } from 'quest-sikuswap-sdk'
 import React, { useContext, useMemo, useState } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

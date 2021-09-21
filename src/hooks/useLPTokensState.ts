@@ -1,4 +1,4 @@
-import { ChainId, Token, TokenAmount } from 'quest-samkoin-sdk'
+import { ChainId, Token, TokenAmount } from 'quest-sikuswap-sdk'
 import { useBoringHelperContract, useDashboardContract, useQuickSwapFactoryContract } from 'hooks/useContract'
 import { useCallback, useEffect, useRef, useState } from 'react'
 

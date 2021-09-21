@@ -49,7 +49,7 @@ export default function BorrowMarkets(): JSX.Element {
             }
         >
             <Helmet>
-                <title>{i18n._(t`Borrow`)} | SamKSwap</title>
+                <title>{i18n._(t`Borrow`)} | SikuSwap</title>
             </Helmet>
             <Card className="h-full bg-dark-900" header={<MarketHeader type="Borrow" lists={[pairs, positions]} />}>
                 {positions.items && positions.items.length > 0 && (

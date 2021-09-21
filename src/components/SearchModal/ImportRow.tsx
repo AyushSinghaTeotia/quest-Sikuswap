@@ -1,4 +1,4 @@
-import { Token } from 'quest-samkoin-sdk'
+import { Token } from 'quest-sikuswap-sdk'
 import { ButtonPrimary } from 'components/ButtonLegacy'
 import { AutoColumn } from 'components/Column'
 import CurrencyLogo from 'components/CurrencyLogo'

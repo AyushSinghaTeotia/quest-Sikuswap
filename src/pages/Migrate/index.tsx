@@ -1,5 +1,5 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { ChainId, JSBI } from 'quest-samkoin-sdk'
+import { ChainId, JSBI } from 'quest-sikuswap-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { formatUnits, parseUnits } from '@ethersproject/units'
 import useMigrateState, { MigrateState } from '../../hooks/useMigrateState'
@@ -311,7 +311,7 @@ const MigrateV2 = () => {
     return (
         <>
             <Helmet>
-                <title>Migrate LP tokens | SamKSwap</title>
+                <title>Migrate LP tokens | SikuSwap</title>
                 <meta name="description" content="Migrate LP tokens to Sushi LP tokens" />
             </Helmet>
 

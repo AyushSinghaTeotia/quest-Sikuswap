@@ -2,7 +2,7 @@ import { NETWORK_ICON, NETWORK_LABEL } from '../../constants/networks'
 import { useModalOpen, useNetworkModalToggle } from '../../state/application/hooks'
 
 import { ApplicationModal } from '../../state/application/actions'
-import { ChainId } from 'quest-samkoin-sdk'
+import { ChainId } from 'quest-sikuswap-sdk'
 import Modal from '../Modal'
 import ModalHeader from '../ModalHeader'
 import React from 'react'
@@ -158,7 +158,7 @@ export default function NetworkModal(): JSX.Element | null {
         <Modal isOpen={networkModalOpen} onDismiss={toggleNetworkModal}>
             <ModalHeader onClose={toggleNetworkModal} title="Select a Network" />
             <div className="text-lg text-primary mb-6">
-                You are currently browsing <span className="font-bold text-pink">SamKswap</span>
+                You are currently browsing <span className="font-bold text-pink">Sikuswap</span>
                 <br /> on the <span className="font-bold text-blue">{NETWORK_LABEL[chainId]}</span> network
             </div>
 

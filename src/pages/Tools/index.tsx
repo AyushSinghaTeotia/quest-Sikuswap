@@ -86,7 +86,7 @@ export default function Pool() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Tools`)} | SamKSwap</title>
+                <title>{i18n._(t`Tools`)} | SikuSwap</title>
             </Helmet>
             <PageWrapper>
                 <SwapPoolTabs active={'pool'} />

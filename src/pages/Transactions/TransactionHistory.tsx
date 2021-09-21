@@ -1,7 +1,7 @@
 import { ArrowUpRight, CheckCircle } from 'react-feather'
 import React, { useContext } from 'react'
 
-import { Currency } from 'quest-samkoin-sdk'
+import { Currency } from 'quest-sikuswap-sdk'
 import { Dots } from '../../components'
 import DoubleCurrencyLogo from 'components/DoubleLogo'
 import { LinkStyledButton } from '../../theme'

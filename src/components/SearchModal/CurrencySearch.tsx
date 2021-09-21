@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from 'quest-samkoin-sdk'
+import { Currency, ETHER, Token } from 'quest-sikuswap-sdk'
 import useDebounce from 'hooks/useDebounce'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
 import useTheme from 'hooks/useTheme'

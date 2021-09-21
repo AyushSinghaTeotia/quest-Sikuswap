@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from 'quest-samkoin-sdk'
+import { Token, TokenAmount } from 'quest-sikuswap-sdk'
 import { useMemo } from 'react'
 import { useTokenContract } from '../hooks/useContract'
 import { useSingleCallResult } from '../state/multicall/hooks'

@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from 'quest-samkoin-sdk'
+import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from 'quest-sikuswap-sdk'
 import { computeTradePriceBreakdown } from './prices'
 
 describe('prices', () => {

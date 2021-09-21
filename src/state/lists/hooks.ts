@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'quest-samkoin-sdk'
+import { ChainId, Token } from 'quest-sikuswap-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 
 import { AppState } from '../index'

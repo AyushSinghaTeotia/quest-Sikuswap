@@ -28,18 +28,18 @@ export default function InfoCard() {
         <div className="flex flex-col max-w-xl w-full mb-2 mt-auto">
             <div className="flex max-w-lg">
                 <div className="text-body font-bold md:text-h5 text-high-emphesis self-end mb-3 md:mb-7">
-                    {i18n._(t`Maximize yield by staking SamK for xSamK`)}
+                    {i18n._(t`Maximize yield by staking Siku for xSiku`)}
                 </div>
                 {/* <div className="pl-6 pr-3 mb-1 min-w-max self-start md:hidden">
                     <img src={XSushiSignSmall} alt="xsushi sign" />
                 </div> */}
             </div>
             <div className="text-gray-500 text-sm leading-5 md:text-caption max-w-lg mb-2 md:mb-4 pr-3 md:pr-0">
-                {t`For every swap on the exchange on every chain, 0.05% of the swap fees are distributed as SamK
-                proportional to your share of the SamKBar. When your SamK is staked into the SamKBar, you receive
-                xSamK in return for voting rights and a fully composable token that can interact with other protocols.
-                Your xSamK is continuously compounding, when you unstake you will receive all the originally deposited
-                SamK and any additional from fees.`}
+                {t`For every swap on the exchange on every chain, 0.05% of the swap fees are distributed as Siku
+                proportional to your share of the SikuBar. When your Siku is staked into the SikuBar, you receive
+                xSiku in return for voting rights and a fully composable token that can interact with other protocols.
+                Your xSiku is continuously compounding, when you unstake you will receive all the originally deposited
+                Siku and any additional from fees.`}
             </div>
             {/* <div className="flex">
                 <div className="mr-14 md:mr-9">

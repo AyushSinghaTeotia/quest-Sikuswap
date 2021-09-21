@@ -1,4 +1,4 @@
-import { ChainId } from 'quest-samkoin-sdk'
+import { ChainId } from 'quest-sikuswap-sdk'
 import React, { useContext } from 'react'
 import { AlertTriangle, ArrowUpCircle } from 'react-feather'
 import { Text } from 'rebass'

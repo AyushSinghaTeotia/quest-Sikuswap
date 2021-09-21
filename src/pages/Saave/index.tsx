@@ -46,7 +46,7 @@ export default function Saave() {
     return (
         <>
             <Helmet>
-                <title>Saave | SamKSwap</title>
+                <title>Saave | SikuSwap</title>
                 <meta name="description" content="Migrate SUSHI -> xSUSHI -> axSUSHI" />
             </Helmet>
             <PageWrapper>

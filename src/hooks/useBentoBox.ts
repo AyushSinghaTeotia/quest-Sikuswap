@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { WETH } from 'quest-samkoin-sdk'
+import { WETH } from 'quest-sikuswap-sdk'
 import { ethers } from 'ethers'
 import { useCallback } from 'react'
 import { useActiveWeb3React } from './useActiveWeb3React'

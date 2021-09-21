@@ -1,4 +1,4 @@
-import { ChainId } from 'quest-samkoin-sdk'
+import { ChainId } from 'quest-sikuswap-sdk'
 
 export type ChainlinkMappingList = {
     readonly [address: string]: {

@@ -1,4 +1,4 @@
-import { ChainId, Pair, Token } from 'quest-samkoin-sdk'
+import { ChainId, Pair, Token } from 'quest-sikuswap-sdk'
 import flatMap from 'lodash.flatmap'
 import { useCallback, useMemo } from 'react'
 import ReactGA from 'react-ga'

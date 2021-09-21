@@ -6,8 +6,8 @@ import InfoCard from './InfoCard'
 import APRCard from './APRCard'
 import StakeCard from './StakeCard'
 import BalanceCard from './BalanceCard'
-import { ChainId } from 'quest-samkoin-sdk'
-import { SUSHI, XSUSHI, SAMK, xSAMK } from '../../constants'
+import { ChainId } from 'quest-sikuswap-sdk'
+import { SUSHI, XSUSHI, SIKU, xSIKU } from '../../constants'
 import useTokenBalance from '../../hooks/useTokenBalance'
 
 const mockData = {
@@ -31,39 +31,39 @@ export default function XSushi() {
     const sushiBalance = useTokenBalance(
         (chainId === ChainId.MATIC)
         ? 
-        SAMK[ChainId.MATIC]?.address ?? ''
+        SIKU[ChainId.MATIC]?.address ?? ''
         :
         (chainId === ChainId.RINKEBY)
         ? 
-        SAMK[ChainId.RINKEBY ]?.address ?? ''
+        SIKU[ChainId.RINKEBY ]?.address ?? ''
         :
         (chainId === ChainId.MAINNET)
         ? 
-        SAMK[ChainId.MAINNET ]?.address ?? ''
+        SIKU[ChainId.MAINNET ]?.address ?? ''
         :
-        SAMK[ChainId.BSC ]?.address ?? ''
+        SIKU[ChainId.BSC ]?.address ?? ''
         )
         
     const xSushiBalance = useTokenBalance(
         (chainId === ChainId.MATIC)
         ?
-        xSAMK[ChainId.MATIC]?.address ?? ''
+        xSIKU[ChainId.MATIC]?.address ?? ''
         :
         (chainId === ChainId.RINKEBY)
         ?
-        xSAMK[ChainId.RINKEBY]?.address ?? ''
+        xSIKU[ChainId.RINKEBY]?.address ?? ''
         :
         (chainId === ChainId.MAINNET)
         ?
-        xSAMK[ChainId.MAINNET]?.address ?? ''
+        xSIKU[ChainId.MAINNET]?.address ?? ''
         :
-        xSAMK[ChainId.BSC]?.address ?? ''
+        xSIKU[ChainId.BSC]?.address ?? ''
         )
 
     return (
         <>
             <Helmet>
-                <title>xSamK | SamKSwap</title>
+                <title>xSiku | SikuSwap</title>
             </Helmet>
             <div className="flex flex-col w-full min-h-fitContent">
                 <div className="flex mb-6 justify-center">

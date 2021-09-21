@@ -1,4 +1,4 @@
-import { Token } from 'quest-samkoin-sdk'
+import { Token } from 'quest-sikuswap-sdk'
 import { useMemo } from 'react'
 import { isAddress } from '../../utils'
 

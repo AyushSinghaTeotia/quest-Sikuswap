@@ -3,7 +3,7 @@ import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from '../../
 import { AutoRow, RowBetween } from '../../components/Row'
 import { ButtonConfirmed, ButtonError, ButtonLight, ButtonPrimary } from '../../components/ButtonLegacy'
 import Card, { DarkCard, GreyCard } from '../../components/CardLegacy'
-import { ChainId, CurrencyAmount, JSBI, Token, Trade } from 'quest-samkoin-sdk'
+import { ChainId, CurrencyAmount, JSBI, Token, Trade } from 'quest-sikuswap-sdk'
 import Column, { AutoColumn } from '../../components/Column'
 import { LinkStyledButton, TYPE } from '../../theme'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
@@ -306,7 +306,7 @@ export default function Swap() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Swap`)} | SamKSwap</title>
+                <title>{i18n._(t`Swap`)} | SikuSwap</title>
                 <meta
                     name="description"
                     content="Switch allows for swapping of ERC20 compatible tokens across multiple networks"

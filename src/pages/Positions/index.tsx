@@ -8,7 +8,7 @@ import { ExternalLink, User } from 'react-feather'
 import { Dots } from 'components'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
 import { useETHBalances } from 'state/wallet/hooks'
-import { Currency } from 'quest-samkoin-sdk'
+import { Currency } from 'quest-sikuswap-sdk'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 
@@ -30,7 +30,7 @@ export default function Positions() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Positions`)} | SamKSwap</title>
+                <title>{i18n._(t`Positions`)} | SikuSwap</title>
             </Helmet>
 
             {/* <div className="w-full max-w-2xl">

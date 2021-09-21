@@ -123,7 +123,7 @@ export default function LendingPair({
         >
             <Helmet>
                 <title>
-                    Lend {pair?.asset?.symbol}-{pair?.collateral?.symbol} | SamK
+                    Lend {pair?.asset?.symbol}-{pair?.collateral?.symbol} | Siku
                 </title>
             </Helmet>
             <Card

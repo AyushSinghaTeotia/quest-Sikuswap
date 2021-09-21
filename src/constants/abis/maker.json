@@ -13,7 +13,7 @@
 			},
 			{
 				"internalType": "address",
-				"name": "_samk",
+				"name": "_siku",
 				"type": "address"
 			},
 			{
@@ -80,7 +80,7 @@
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "amountSAMK",
+				"name": "amountSIKU",
 				"type": "uint256"
 			}
 		],

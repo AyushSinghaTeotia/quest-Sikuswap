@@ -1,10 +1,10 @@
-// import { ChainId } from 'quest-samkoin-sdk'
+// import { ChainId } from 'quest-sikuswap-sdk'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Input as NumericalInput } from '../../components/NumericalInput'
 import ErrorTriangle from '../../assets/images/error-triangle.svg'
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { BAR_ADDRESS, Token, TokenAmount } from 'quest-samkoin-sdk'
+import { BAR_ADDRESS, Token, TokenAmount } from 'quest-sikuswap-sdk'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
 import { useWalletModalToggle } from '../../state/application/hooks'
 import { BalanceProps } from '../../hooks/useTokenBalance'
@@ -142,24 +142,24 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
     const [approvalState, approve] = useApproveCallback(     
         (chainId === 137)
         ? new TokenAmount(
-            new Token(137, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'SamK', ''),
+            new Token(137, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'Siku', ''),
             parsedInput.value.toString()
         )  
         :
         (chainId === 4)
         ? new TokenAmount(
-            new Token(4, '0x526E610900E17b53d0CC2115A600b9a55838a715', 18, 'SamK', ''),
+            new Token(4, '0x526E610900E17b53d0CC2115A600b9a55838a715', 18, 'Siku', ''),
             parsedInput.value.toString()
         )
         :
         (chainId === 56)
         ? new TokenAmount(
-            new Token(56, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'SamK', ''),    //address need to change
+            new Token(56, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'Siku', ''),    //address need to change
             parsedInput.value.toString()
         )
         :
          new TokenAmount(
-            new Token(1, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'SamK', ''),     //address need to change
+            new Token(1, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'Siku', ''),     //address need to change
             parsedInput.value.toString()
         ),
         (chainId === 137) ? BAR_ADDRESS[137] :(chainId === 4) ? BAR_ADDRESS[4] :(chainId === 56) ? BAR_ADDRESS[56] : BAR_ADDRESS[1]  
@@ -180,7 +180,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
                         }}
                     >
                         <div className={activeTab === 0 ? activeTabStyle : inactiveTabStyle}>
-                            <p>{i18n._(t`Stake SamK`)}</p>
+                            <p>{i18n._(t`Stake Siku`)}</p>
                         </div>
                     </div>
                     <div
@@ -198,11 +198,11 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
 
                 <div className="flex justify-between items-center w-full mt-6">
                     <p className="text-large md:text-h5 font-bold text-high-emphesis">
-                        {activeTab === 0 ? i18n._(t`Stake SamK`) : i18n._(t`Unstake`)}
+                        {activeTab === 0 ? i18n._(t`Stake Siku`) : i18n._(t`Unstake`)}
                     </p>
                     <div className="border-gradient-r-pink-red-light-brown-dark-pink-red border-transparent border-solid border rounded-3xl px-4 md:px-3.5 py-1.5 md:py-0.5 text-high-emphesis text-xs font-medium md:text-caption md:font-normal">
-                        {/* {`1 xSamK = ${xSushiPerSushi.toFixed(4)} SamK`} */}
-                        {`1 xSamK = 1 SamK`}
+                        {/* {`1 xSiku = ${xSushiPerSushi.toFixed(4)} Siku`} */}
+                        {`1 xSiku = 1 Siku`}
 
                     </div>
                 </div>
@@ -229,7 +229,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
                                     input ? 'text-high-emphesis' : 'text-secondary'
                                 }`}
                             >
-                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}SamK`}
+                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}Siku`}
                             </p>
                         </div>
                         <div className="flex items-center text-secondary text-caption2 md:text-caption">

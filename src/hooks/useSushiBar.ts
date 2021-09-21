@@ -52,7 +52,7 @@ const { BigNumber } = ethers
             if (amount?.value) {
                 try {
                     const tx = await barContract?.enter(amount?.value)
-                    return addTransaction(tx, { summary: 'Enter SamKBar' })
+                    return addTransaction(tx, { summary: 'Enter SikuBar' })
                 } catch (e) {
                     return e
                 }
@@ -68,7 +68,7 @@ const { BigNumber } = ethers
                 try {
                     const tx = await barContract?.leave(amount?.value)
                     //const tx = await barContract?.leave(ethers.utils.parseUnits(amount)) // where amount is string
-                    return addTransaction(tx, { summary: 'Leave SamKBar' })
+                    return addTransaction(tx, { summary: 'Leave SikuBar' })
                 } catch (e) {
                     return e
                 }
