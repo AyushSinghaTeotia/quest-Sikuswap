@@ -273,7 +273,7 @@ function AppBar(): JSX.Element {
                                                             }}
                                                         >
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/images/tokens/xsiku-square.png`}
+                                                                src={`${process.env.PUBLIC_URL}/images/tokens/xsamk-square.png`}
                                                                 alt="Switch Network"
                                                                 style={{
                                                                     minWidth: 66,
@@ -351,7 +351,7 @@ function AppBar(): JSX.Element {
                                                             }}
                                                         >
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/images/tokens/siku-square.png`}
+                                                                src={`${process.env.PUBLIC_URL}/images/tokens/samk-square.png`}
                                                                 alt="Switch Network"
                                                                 style={{
                                                                     minWidth: 66,
