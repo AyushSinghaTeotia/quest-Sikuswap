@@ -97,7 +97,7 @@ export const SIKU: ChainTokenMap = {
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
-        '0x526E610900E17b53d0CC2115A600b9a55838a715',
+        '0x5C8b8F9c6Ba268C0b49A77C2A341d60D80130a18',
         18,
         'SIKU',
         'siku'
@@ -167,7 +167,7 @@ export const xSIKU: ChainTokenMap = {
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
-        '0xc45706a1B1C935B50dAC129025e4E8b847912136',
+        '0xd035bA60C477c32F56eF0Eb7D273B1B83d96EeCB',
         18,
         'xSIKU',
         'SikuBar'
