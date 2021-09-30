@@ -27,7 +27,7 @@ module.exports = {
             'dark-900': '#1c0826',
             'dark-850': '#1d1e2c',
             'dark-800': '#1c0826',
-            'dark-700': '#4c0d34',
+            'dark-700': '#c972aa',
             'dark-600': '#1C2D49',
             'dark-500': '#223D5E',
 
