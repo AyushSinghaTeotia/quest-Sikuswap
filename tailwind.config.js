@@ -27,14 +27,14 @@ module.exports = {
             'dark-900': '#1c0826',
             'dark-850': '#1d1e2c',
             'dark-800': '#1c0826',
-            'dark-700': '#c972aa',
+            'dark-700': '#ff71ad',
             'dark-600': '#1C2D49',
             'dark-500': '#223D5E',
 
             // TODO: bad... these are causing issues with text colors
             // 'high-emphesis': '#E3E3E3',
             primary: '#BFBFBF',
-            secondary: '#7F7F7F',
+            secondary: '#FFFFFF',
             'low-emphesis': '#575757'
         },
         screens: {
@@ -137,7 +137,7 @@ module.exports = {
                 ...defaultTheme.textColor,
                 'low-emphesis': '#575757',
                 primary: '#BFBFBF',
-                secondary: '#7F7F7F',
+                secondary: '#FFFFFF',
                 'high-emphesis': '#E3E3E3'
             },
             backgroundColor: {
